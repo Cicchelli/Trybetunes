@@ -5,7 +5,6 @@ import { AlbumType } from '../types';
 import Loading from '../components/Loading';
 
 function Search() {
-  const [available, setAvailable] = useState(true);
   const [artist, setArtist] = useState<string>('');
   const [albums, setAlbums] = useState<AlbumType[]>([]);
   const [loading, setLoading] = useState(false);

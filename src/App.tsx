@@ -7,10 +7,10 @@ import NotFound from './pages/NotFound';
 function App() {
   return (
     <Routes>
-      <Route path="/album:id" element={ <Album /> } />
       <Route path="/" element={ <Login /> } />
-      <Route path="/*" element={ <NotFound /> } />
       <Route path="/search" element={ <Search /> } />
+      <Route path="/album/:id" element={ <Album /> } />
+      {/* <Route path="*" element={ <NotFound /> } /> */}
     </Routes>
   );
 }
